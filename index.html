@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" type="module" defer></script>
+  </head>
+  <body>
+    <header id="headerSection" class="header">
+      <nav id="headerNav" class="header__nav">
+        <div class="nav__logo">
+          <img
+            class="nav__logo-image"
+            src="./assets/logo.png"
+            alt="Muijin Logo"
+          />
+        </div>
+        <div id="navListWrapper" class="nav__list-wrapper">
+          <ul id="navList" class="nav__list">
+            <li class="nav__list-item">
+              <a href="" class="nav__list-link">COLLECTION</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="" class="nav__list-link">AUDIOBOOKS</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="" class="nav__list-link">AUTHORS</a>
+            </li>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="" class="nav__list-link"
+                ><img src="./assets/heart-black-icon.png" alt=""
+              /></a>
+            </li>
+            <li class="nav__list-item">
+              <a href="" class="nav__list-link"
+                ><img src="./assets/bag-black-icon.png" alt=""
+              /></a>
+            </li>
+            <div class="nav__line"></div>
+            <li class="nav__list-item">
+              <button href="" class="nav__list-link nav__search-icon">
+                <img
+                  id="searchBtn"
+                  src="./assets/search-black-icon.png"
+                  alt=""
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Change the class names to fit BEM -->
+      <nav id="headerSearchNav" class="header__search-nav">
+        <div class="nav__logo">
+          <img
+            class="nav__logo-image"
+            src="./assets/logo-black.png"
+            alt="Muijin Logo"
+          />
+        </div>
+        <div class="nav__search-wrapper">
+          <div class="line"></div>
+
+          <div class="nav__list-link nav__search-icon">
+            <img src="./assets/search-white-icon.png" alt="" />
+          </div>
+          <!-- <p class="search__description">
+            Search Book, author, series, ISBN...
+          </p> -->
+          <fieldset class="searchup__form">
+            <input
+              id="searchInput"
+              type="text"
+              maxlength="50"
+              placeholder="Search Book, author, series, ISBN..."
+              required
+            />
+          </fieldset>
+        </div>
+        <button id="cancelBtn" class="nav__list-link nav__cancel-icon">
+          <img src="./assets/cancel-white-icon.png" alt="" />
+        </button>
+      </nav>
+
+      <section id="heroSection" class="hero">
+        <div class="hero__content-wrapper">
+          <h1 class="hero__title">
+            EXPLORE NEW <br />
+            DIMENSIONS OF <br />
+            STORYTELLING
+          </h1>
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet consectetur. Ullamcorper magna quis
+            hendrerit mattis in. Mauris orci commodo mattis nisl ut mi justo
+            amet.
+          </p>
+
+          <button class="hero__button">Explore Collection</button>
+        </div>
+      </section>
+    </header>
+    <section class="genres">
+      <div class="genre__card-wrapper">
+        <article class="genre-card">
+          <img
+            class="genre-card__icon"
+            src="./assets/fantasy-icon.png"
+            alt=""
+          />
+          <h1 class="genre-card__title">FANTASY</h1>
+          <h2 class="genre-card__subtitle">ファンタジー</h2>
+        </article>
+        <article class="genre-card">
+          <img class="genre-card__icon" src="./assets/scifi-icon.png" alt="" />
+          <h1 class="genre-card__title">SCI-FI</h1>
+          <h2 class="genre-card__subtitle">ファンタジー</h2>
+        </article>
+        <article class="genre-card">
+          <img
+            class="genre-card__icon"
+            src="./assets/romance-icon.png"
+            alt=""
+          />
+          <h1 class="genre-card__title">ROMANCE</h1>
+          <h2 class="genre-card__subtitle">ファンタジー</h2>
+        </article>
+      </div>
+
+      <div class="genre__button-wrapper">
+        <button class="genre__button">Browse All Genres</button>
+      </div>
+    </section>
+    <section id="bannerRight" class="banner-right">
+      <article id="bannerRightCard" class="banner-right-card">
+        <h2 class="banner-card__subtitle">Seasonal Sale | オーディオブック</h2>
+        <h1 class="banner-card__title">
+          end of summer <br />
+          close to <br />
+          winter sale
+        </h1>
+        <p class="banner__description">
+          Lorem ipsum dolor sit amet consectetur. Ullamcorper magna quis
+          hendrerit mattis in. Mauris orci commodo mattis nisl ut mi justo amet.
+        </p>
+      </article>
+      <div id="bannerRightCanvasWrapper" class="banner-right__canvas-wrapper">
+        <img
+          class="banner-right__canvas"
+          src="./assets/discount-canvas.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="featured">
+      <div class="featured__card-wrapper">
+        <article class="featured-card">
+          <img class="featured-cover" src="./assets/bookcover.png" alt="" />
+          <h1 class="featured-cover__title">A Day of Fallen Night</h1>
+          <h2 class="featured-cover__subtitle">by Samantha</h2>
+        </article>
+        <article class="featured-card">
+          <img class="featured-cover" src="./assets/bookcover2.png" alt="" />
+          <h1 class="featured-cover__title">Holly</h1>
+          <h2 class="featured-cover__subtitle">by Stephen King</h2>
+        </article>
+        <article class="featured-card">
+          <img class="featured-cover" src="./assets/bookcover3.png" alt="" />
+          <h1 class="featured-cover__title">Fifty Words for Rain</h1>
+          <h2 class="featured-cover__subtitle">by Sasha Lemmie</h2>
+        </article>
+        <article class="featured-card">
+          <img class="featured-cover" src="./assets/bookcover4.png" alt="" />
+          <h1 class="featured-cover__title">The Vaster Wilds</h1>
+          <h2 class="featured-cover__subtitle">by Lauren Groff</h2>
+        </article>
+        <article class="featured-card">
+          <img class="featured-cover" src="./assets/bookcover5.png" alt="" />
+          <h1 class="featured-cover__title">Black Leopard, Red Wolf</h1>
+          <h2 class="featured-cover__subtitle">by Marlon James</h2>
+        </article>
+      </div>
+      <div class="featured__button-wrapper">
+        <button class="featured__button">View Audiobooks</button>
+      </div>
+    </section>
+    <section class="banner">
+      <article class="banner-card">
+        <h1 class="banner-card__title">
+          begin your <br />
+          reading journey
+        </h1>
+        <p class="banner__description">
+          Become a member and subscribe to our 'Book of Your Choice' program and
+          receive a different selection of books each month from our extensive
+          collection.
+        </p>
+        <div class="banner__button-wrapper">
+          <button class="banner__button">Sign Up Now</button>
+        </div>
+      </article>
+    </section>
+    <section id="bannerLeft" class="banner-left">
+      <article id="bannerLeftCard" class="banner-left-card">
+        <h2 class="banner-card__subtitle">Seasonal Sale | のインテリア</h2>
+        <h1 class="banner-card__title">
+          END OF SUMMER <br />
+          CLOSE TO <br />
+          WINTER SALE
+        </h1>
+        <p class="banner__description">
+          Lorem ipsum dolor sit amet consectetur. Ullamcorper magna quis
+          hendrerit mattis in. Mauris orci commodo mattis nisl ut mi justo amet.
+        </p>
+      </article>
+      <div id="bannerLeftCanvasWrapper" class="banner-left__canvas-wrapper">
+        <img
+          class="banner-left__canvas"
+          src="./assets/bestsellers-canvas.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="featured">
+      <div class="featured__card-wrapper">
+        <article class="featured-card">
+          <img class="featured-cover" src="./assets/bookcover11.png" alt="" />
+          <h1 class="featured-cover__title">A Day of Fallen Night</h1>
+          <h2 class="featured-cover__subtitle">by Samantha</h2>
+        </article>
+        <article class="featured-card">
+          <img class="featured-cover" src="./assets/bookcover13.PNG" alt="" />
+          <h1 class="featured-cover__title">Holly</h1>
+          <h2 class="featured-cover__subtitle">by Stephen King</h2>
+        </article>
+        <article class="featured-card">
+          <img class="featured-cover" src="./assets/bookcover23.PNG" alt="" />
+          <h1 class="featured-cover__title">Fifty Words for Rain</h1>
+          <h2 class="featured-cover__subtitle">by Sasha Lemmie</h2>
+        </article>
+        <article class="featured-card">
+          <img class="featured-cover" src="./assets/bookcover18.PNG" alt="" />
+          <h1 class="featured-cover__title">The Vaster Wilds</h1>
+          <h2 class="featured-cover__subtitle">by Lauren Groff</h2>
+        </article>
+        <article class="featured-card">
+          <img class="featured-cover" src="./assets/bookcover17.png" alt="" />
+          <h1 class="featured-cover__title">Black Leopard, Red Wolf</h1>
+          <h2 class="featured-cover__subtitle">by Marlon James</h2>
+        </article>
+      </div>
+      <div class="featured__button-wrapper">
+        <button class="featured__button">View Fall Discounts</button>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__round-button-wrapper">
+        <button class="gallery__round-button">
+          View <br />
+          Collection
+        </button>
+      </div>
+      <article class="gallery-card">
+        <h2 class="gallery-card__subtitle">Audiobooks | のインテリア</h2>
+        <h1 class="gallery-card__title">
+          embrace<br />
+          our ambient<br />
+          audiobooks
+        </h1>
+        <p class="gallery__description">
+          Lorem ipsum dolor sit amet consectetur. Ullamcorper magna quis
+          hendrerit mattis in. Mauris orci commodo mattis nisl ut mi justo amet.
+        </p>
+        <div class="gallery__button-wrapper">
+          <button class="gallery__button">View Audiobooks</button>
+        </div>
+      </article>
+      <div class="gallery__canvas-wrapper">
+        <img
+          class="gallery__canvas"
+          src="./assets/audiobooks-canvas.png"
+          alt=""
+        />
+      </div>
+      <div class="gallery__canvas-wrapper">
+        <img class="gallery__canvas" src="./assets/authors-canvas.png" alt="" />
+      </div>
+      <article class="gallery-card">
+        <h2 class="gallery-card__subtitle">Authors | 著者</h2>
+        <h1 class="gallery-card__title">
+          unravel the<br />
+          books behind<br />
+          great authors
+        </h1>
+        <p class="gallery__description">
+          Lorem ipsum dolor sit amet consectetur. Ullamcorper magna quis
+          hendrerit mattis in. Mauris orci commodo mattis nisl ut mi justo amet.
+        </p>
+        <div class="gallery__button-wrapper">
+          <button class="gallery__button">View Authors</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="signup-banner">
+      <fieldset class="signup__form">
+        <h1 class="signup__title">Sign Up</h1>
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="example@gmail.com"
+          required
+        />
+        <label for="email">Password</label>
+        <input type="password" placeholder="must be 8 characters" required />
+        <label for="email">New Password</label>
+        <input type="password" placeholder="repeat password" required />
+        <button type="submit">Sign Up</button>
+        <button type="submit">Sign up with Google</button>
+        <p>Already have an account? <span>Log in</span></p>
+      </fieldset>
+      <div class="signup__canvas-wrapper">
+        <img class="signup__canvas" src="./assets/packages-canvas.png" alt="" />
+      </div>
+    </section>
+    <!-- <div class="animation-wrapper">
+      <div class="animation-container">
+        <h1>
+          SCROLL <br />
+          SCROLL <br />
+          SCROLL
+        </h1>
+      </div>
+    </div> -->
+    <footer class="footer">
+      <div class="footer__list-wrapper">
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="" class="footer__list-link">ABOUT US</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="" class="footer__list-link">SERVICES</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="" class="footer__list-link">GENRES</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="" class="footer__list-link">SHOP</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
